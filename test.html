@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is my portfolio.">
+    <meta http-equiv="X-UA-Compatibile" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="lightGallery-master/dist/css/lightgallery-bundle.css">
+    <style>
+        * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+
+        body {
+            background: #222;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .gallery a {
+            height: 400px;
+            width: 300px;
+            margin: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 5px #000;
+        }
+
+        .gallery a img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .gallery a img:hover {
+            transform: scale(1.4);
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 10px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+    
+  </head>
+
+  <body>
+    
+
+    <h1>lightbox gallery</h1>
+
+    <div class="gallery">
+        <a href="images/complete/narChar1.jpeg">
+            <img src="images/complete/narChar1.jpeg" alt="" />
+        </a>
+        <a href="images/complete/narChar2.jpeg">
+            <img src="images/complete/narChar2.jpeg" alt="" />
+        </a>
+        <a href="images/complete/amidamaru.jpeg">
+            <img src="images/complete/amidamaru.jpeg" alt="" />
+        </a>
+        <a href="images/complete/amiHead1.jpeg">
+            <img src="images/complete/amiHead1.jpeg" alt="" />
+        </a>
+        <a href="images/complete/amiHead2.jpeg">
+            <img src="images/complete/amiHead2.jpeg" alt="" />
+        </a>
+        <a href="images/complete/samurai.jpeg">
+            <img src="images/complete/samurai.jpeg" alt="" />
+        </a>
+        <a href="images/complete/butterGirl.jpeg">
+            <img src="images/complete/butterGirl.jpeg" alt="" />
+        </a>
+        <a href="images/complete/desert.jpeg">
+            <img src="images/complete/desert.jpeg" alt="" />
+        </a>
+        <a href="images/complete/ffChar.jpeg">
+            <img src="images/complete/ffChar.jpeg" alt="" />
+        </a>
+        <a href="images/complete/fox.jpeg">
+            <img src="images/complete/fox.jpeg" alt="" />
+        </a>
+        <a href="images/complete/gasGirl.jpeg">
+            <img src="images/complete/gasGirl.jpeg" alt="" />
+        </a>
+        <a href="images/complete/kakashi.jpeg">
+            <img src="images/complete/kakashi.jpeg" alt="" />
+        </a>
+
+    </div>
+
+    <script src="lightGallery-master/dist/lightgallery.umd.js"></script>
+
+    <script>
+        lightGallery(document.querySelector(".gallery"));
+    </script>
+
+  </body>
+
+</html>
